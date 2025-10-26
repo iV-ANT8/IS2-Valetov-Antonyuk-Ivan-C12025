@@ -1,0 +1,1 @@
+![Diagrama](Dominio.drawio.png)
