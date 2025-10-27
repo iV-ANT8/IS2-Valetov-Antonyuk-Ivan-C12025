@@ -16,4 +16,4 @@ El flujo general de interacción entre estas entidades es el siguiente:
 Esto proporciona una **visión clara y estructurada** del funcionamiento interno del sistema, sirviendo como **base conceptual** para el diseño y el desarrollo posterior del sistema.
 
 ## Imagen
-![Diagrama](../anexos/img/Dominio.drawio.png)
+![Diagrama](../anexos/img/Dominio.png)
