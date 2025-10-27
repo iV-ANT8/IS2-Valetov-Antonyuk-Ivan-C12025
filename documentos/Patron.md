@@ -1,4 +1,4 @@
-# PATRÓN DE DISEÑO: ADAPTER
+# 🧬 PATRÓN DE DISEÑO: ADAPTER
 
 ## Problema del Sistema:
 El problema identificado en mi sistema es la falta de integración con los posibles ejemplares que provienen de una biblioteca externa virtual, lo que podría provocar incompatibilidades e incoherencias en la lógica principal en caso de que el ejemplar externo tenga un formato distinto al manejado por el sistema.
@@ -14,7 +14,7 @@ Luego de la aplicación del patrón, el sistema manejaría de manera uniforme ta
 ## Ejemplo en el Código
 Este sería un ejemplo dado en el contexto del sistema, utilizando el lenguaje `Python`:
 
-```
+```python
     ====== ADAPTER PARA FUENTES EXTERNAS ======
     # Clase de Adaptador
 

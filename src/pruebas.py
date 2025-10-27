@@ -3,7 +3,7 @@ from entidades.usuario import Usuario
 from entidades.libro import Libro
 from entidades.ejemplar import Ejemplar
 from entidades.biblioteca import Biblioteca
-from validacion import crear_prestamo, crear_reserva, procesar_devolucion
+from funciones import crear_prestamo, crear_reserva, procesar_devolucion
 
 # ======== PRUEBAS ========
 # LIBROS

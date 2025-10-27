@@ -1,3 +1,21 @@
+# ⚡ Pruebas
+
+<ins>Siguiendo el flujo del sistema, simulé 4 posibles casos en total:</ins>
+
+1) Un Usuario se registra como socio, realiza un Préstamo y una Reserva, retira el Ejemplar de la Biblioteca y lo devuelve a tiempo sin recibir una Multa.
+
+2) Un Usuario regular que intenta solicitar un Libro de bibliotecas externas sin ser socio
+
+3) Un Usuario regular realiza un Préstamo y una Reserva, retira el Ejemplar de la Biblioteca pero no lo devuelve a tiempo, por lo que recibe una Multa con un monto a pagar.
+
+4) Un Usuario regular intenta realizar un Préstamo sobre un Libro cuyo Ejemplar no está disponible
+
+---
+
+## ⚡ Resultados Deseados en el Código:
+
+Los siguientes son los resultados esperados al ejecutar `pruebas.py`:
+
 ```
 $ py -m pruebas
 
