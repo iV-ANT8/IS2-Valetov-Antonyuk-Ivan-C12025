@@ -5,8 +5,8 @@ class Prestamo:
         self.id = id
         self.usuario = usuario
         self.libro = libro
-        self.fecha_retiro = fecha_retiro if fecha_retiro else date.today()
-        self.fecha_devolucion = self.fecha_retiro + timedelta(days=30) if fecha_devolucion is None else fecha_devolucion
+        self.fecha_retiro = fecha_retiro if fecha_retiro else date.today() # Asignar fecha de retiro como hoy si no se proporciona
+        self.fecha_devolucion = self.fecha_retiro + timedelta(days=30) if fecha_devolucion is None else fecha_devolucion # Devolución en 30 días por defecto
         self.devuelto=False
 
     def asignar_fecha_devolucion(self):
@@ -17,7 +17,7 @@ class Prestamo:
         print(f"El préstamo ID {self.id} con el nombre {self.libro.titulo} ha sido marcado como devuelto.")
 
     def esta_vencido(self):
-        return not self.devuelto and date.today() > self.fecha_devolucion
+        return not self.devuelto and date.today() > self.fecha_devolucion # Verifica si la fecha actual es mayor a la fecha de devolución y no ha sido devuelto
 
     def __str__(self):
         return f"Préstamo(ID: {self.id}, Usuario: {self.usuario.nombre}, Libro: {self.libro.titulo}, Retiro: {self.fecha_retiro}, Devolución: {self.fecha_devolucion})"

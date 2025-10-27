@@ -3,6 +3,9 @@ from entidades.reserva import Reserva
 from entidades.notificacion import Notificacion
 from entidades.multa import Multa
 
+# ======== FUNCIONES DE VALIDACIÓN ========
+
+# PRESTAMOS
 def crear_prestamo(usuario, ejemplar):
     # 1️⃣ Verificar disponibilidad
     if not ejemplar.estado == "disponible":
@@ -19,6 +22,7 @@ def crear_prestamo(usuario, ejemplar):
     print(f"Préstamo creado con éxito para {usuario.nombre}. Libro: {ejemplar.libro.titulo}")
     return prestamo
 
+# RESERVAS
 def crear_reserva(usuario, ejemplar, prestamo, biblioteca):
     # Lógica para crear una reserva
     reserva = Reserva(id=3, prestamo=prestamo, ejemplar=ejemplar, condicion="pendiente")
@@ -27,13 +31,15 @@ def crear_reserva(usuario, ejemplar, prestamo, biblioteca):
     biblioteca.otorgar_ejemplar(reserva)
     return reserva
 
+# DEVOLUCIONES
 def procesar_devolucion(prestamo, biblioteca):
-    if prestamo.esta_vencido():
+    # Lógica para procesar la devolución
+    if prestamo.esta_vencido(): # Si no hubo devolución a tiempo
         notificacion = Notificacion(id=7, usuario=prestamo.usuario, mensaje=f"'No ha devuelto el libro {prestamo.libro.titulo} a tiempo. Se aplicará una multa.'")
         biblioteca.enviar_notificacion(notificacion)
         multa = Multa(id=9, usuario=prestamo.usuario, monto_pagar=1500, motivo="'Retraso en la devolución del ejemplar.'")
         biblioteca.enviar_multa(multa)
-    else:
+    else: # Devolución a tiempo
         notificacion = Notificacion(id=8, usuario=prestamo.usuario, mensaje=f"'Gracias por devolver el libro {prestamo.libro.titulo} a tiempo.'")
         biblioteca.enviar_notificacion(notificacion)
         prestamo.marcar_devuelto()
