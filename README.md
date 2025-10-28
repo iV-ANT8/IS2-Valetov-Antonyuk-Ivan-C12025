@@ -12,3 +12,13 @@
 
 - Esquema gráfico (UML).
 - Validación del modelo en el lenguaje de programación que usted elija.
+
+-----
+
+# 📚 Referencias usadas para la resolución del Trabajo
+
+- 🦝[Refactoring Guru](https://refactoring.guru/es/design-patterns/adapter)
+- 🛑[Stackabuse](https://stackabuse.com/adapter-design-pattern-in-python)
+- 🥼[Pytest.org](https://docs.pytest.org/en/stable/getting-started.html)
+- 🐍[Real Python](https://realpython.com/pytest-python-testing)
+- También fueron utilizadas herramientas IA como 🧠[ChatGPT](https://www.chatgpt.com) y 🤖[Copilot](https://copilot.microsoft.com)
