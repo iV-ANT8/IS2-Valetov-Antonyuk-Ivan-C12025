@@ -22,3 +22,9 @@
 - 🥼[Pytest.org](https://docs.pytest.org/en/stable/getting-started.html)
 - 🐍[Real Python](https://realpython.com/pytest-python-testing)
 - También fueron utilizadas herramientas IA como 🧠[ChatGPT](https://www.chatgpt.com) y 🤖[Copilot](https://copilot.microsoft.com)
+
+----
+
+## ⚠ Importante
+
+En caso de no poder previsualizar o descargar correctamente los archivos o imágenes desde el Github, **recomiendo clonar este repositorio** y abrir los archivos manualmente en el equipo.
